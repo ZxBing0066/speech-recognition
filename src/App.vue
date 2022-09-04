@@ -94,7 +94,8 @@ watch(() => ({ ...options.value }), setRecognitionOptions);
     <div>
         <img :class="{ mic: 1, active: micOn }" src="/mic-svgrepo-com.svg" alt="mic" @click="toggleMic" />
     </div>
-    <p>点击麦克风图标切换语音助手开启状态，说“刷新”让语音助手刷新页面。</p>
+    <p>点击麦克风图标切换语音助手开启状态，开启后说话可展示说话的内容</p>
+    <p>说“刷新”让语音助手刷新页面。</p>
     <div class="output">
         <p v-for="res in recognitionResults">{{ res }}</p>
     </div>
